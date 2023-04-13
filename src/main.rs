@@ -26,6 +26,17 @@ impl Amount {
     }
 }
 
+enum Coin {
+    Cent1,
+    Cent2,
+    Cent5,
+    Cent10,
+    Cent20,
+    Cent50,
+    Eur1,
+    Eur2,
+}
+
 fn main() {
     let amount = Amount { euros: 2, cents: 57 };
     println!("{}", amount);
