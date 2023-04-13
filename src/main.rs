@@ -7,5 +7,5 @@ struct Amount {
 
 fn main() {
     let amount = Amount { euros: 2, cents: 57 };
-    println!("{:?}", amount);
+    println!("{}.{:02} \u{20AC}", amount.euros, amount.cents);
 }
