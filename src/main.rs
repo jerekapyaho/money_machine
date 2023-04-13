@@ -59,8 +59,8 @@ fn main() {
     let new_amount = Amount::new(586);
     println!("{}", new_amount);
 
-    let twentyCents = Coin::Cent20;
-    println!("{}", twentyCents.value_in_cents());
+    let twenty_cents = Coin::Cent20;
+    println!("{}", twenty_cents.value_in_cents());
 
     let my_coins = [Coin::Cent20, Coin::Cent5, Coin::Cent10];
     let mut sum = 0;
