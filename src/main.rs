@@ -1,4 +1,5 @@
 /// Represents a monetary amount in euros and cents.
+#[derive(Debug)]
 struct Amount {
     euros: u32,
     cents: u32, 
@@ -6,7 +7,5 @@ struct Amount {
 
 fn main() {
     let amount = Amount { euros: 2, cents: 57 };
-
-    // NOTE: this will not compile! (This is intentional.)
-    println!("{}", amount);
+    println!("{:?}", amount);
 }
